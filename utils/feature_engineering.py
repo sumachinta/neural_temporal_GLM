@@ -1,6 +1,8 @@
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from typing import Tuple, List
+from utils.validation import is_valid_window
 
 def create_lagged_features(
     data: pd.DataFrame, lags: int, time_bins: np.ndarray
